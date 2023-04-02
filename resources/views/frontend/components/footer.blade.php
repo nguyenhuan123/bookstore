@@ -15,7 +15,12 @@
                 <div class="item">
                     <div class="title">Về chúng tôi</div>
                     <ul>
-                        
+                        <li>
+                            <a href="{{ route('get.blog.home') }}">Bài viết</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('get.product.list') }}">Sản phẩm</a>
+                        </li>
                         <li>
                             <a href="{{ route('get.register') }}">Đăng ký</a>
                         </li>
@@ -26,11 +31,26 @@
                 </div>
                 <div class="item">
                     <div class="title">Tin tức</div>
-                    
+                    <ul>
+                        @if (isset($menus))
+                            @foreach($menus as $menu)
+                                <li>
+                                    <a title="{{ $menu->mn_name }}"
+                                        href="{{ route('get.article.by_menu',$menu->mn_slug.'-'.$menu->id) }}">
+                                        {{ $menu->mn_name }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        @endif
+                        <li><a href="{{ route('get.contact') }}">Liên hệ</a></li>
+                    </ul>
                 </div>
                 <div class="item">
                     <div class="title">Chính sách</div>
-                    
+                    <ul>
+                        <li><a href="{{ route('get.static.shopping_guide') }}">Hướng dẫn mua hàng</a></li>
+                        <li><a href="{{  route('get.static.return_policy') }}">Chính sách đổi trả</a></li>
+                    </ul>
                 </div>
             </div>
 

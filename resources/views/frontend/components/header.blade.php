@@ -49,7 +49,7 @@
             </div>
             <div class="search">
 
-                <form action="" role="search" method="GET">
+                <form action="{{ $link_search ?? route('get.product.list',['k' => Request::get('k')]) }}" role="search" method="GET">
                     <input type="text" name="k" value="{{ Request::get('k') }}" class="form-control" placeholder="Tìm kiếm sản phẩm ...">
                     <button type="submit" class="btnSearch" style="background-color:#72a27a!important;">
                         <i class="fa fa-search"></i>
@@ -59,7 +59,7 @@
             </div>
             <ul class="right">
                 <li>
-                    <a href="" title="Giỏ hàng">
+                    <a href="{{ route('get.shopping.list') }}" title="Giỏ hàng">
                         <i class="fa fa-shopping-bag"></i>
                         <span class="text">
                             <span class="">Giỏ hàng ({{ \Cart::count() }})</span>
@@ -84,8 +84,39 @@
                     </ul>
                 </li>
             </ul>
-
-            
+        
+            <div id="menu-main" class="container">
+                <ul class="menu-list">
+                    @foreach($categories as $item)
+                    <li>
+                        <a href="{{  route('get.category.list', $item->c_slug.'-'.$item->id) }}"
+                           title="{{  $item->c_name }}" class="js-open-menu">
+                            <img src="{{ pare_url_file($item->c_avatar) }}" alt="{{ $item->c_name }}">
+                            <span>{{  $item->c_name }}</span>
+                            @if (isset($item->children) && count($item->children))
+                                <span class="fa fa-angle-right"></span>
+                            @else
+                                <span></span>
+                            @endif
+                        </a>
+                        @if (isset($item->children) && count($item->children))
+                        <div class="submenu">
+                            <div class="group">
+                                <div class="item">
+                                    @foreach($item->children as $children)
+                                        <a href="{{  route('get.category.list', $children->c_slug.'-'.$children->id) }}"
+                                           title="{{  $children->c_name }}" class="js-open-menu">
+                                            <span>{{  $children->c_name }}</span>
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
 
     </div>
