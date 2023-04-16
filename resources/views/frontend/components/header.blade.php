@@ -84,8 +84,8 @@
                     </ul>
                 </li>
             </ul>
-        
-            <div id="menu-main" class="container">
+
+            <div id="menu-main" class="container" style="display: none">
                 <ul class="menu-list">
                     @foreach($categories as $item)
                     <li>
