@@ -108,7 +108,9 @@
                                 <button class="buy1 btn btn-purple " style="width: 100%;border-radius: 5px" type="submit" name="pay" value="transfer">
                                     Thanh toán khi nhận hàng
                                 </button>
-                               
+                                <button class="buy1 btn btn-pink" name="payment" value="2" type="submit" style="width: 100%;border-radius: 5px; margin-top: 15px">
+                                    <span class="">Thanh toán online</span>
+                                </button>
                             </div>
                         </div>
                         @php
