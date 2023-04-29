@@ -18,8 +18,8 @@ class Transaction extends Model
     const STATUS_SUCCESS = 3;
     const STATUS_CANCEL = -1;
 
-    const VNP_TMN_CODE = "B6D7F86K";
-    const VNP_HASH_SECRET = "YVVVDXXUGTGPFEVRUBWEXKIIYNNFUUTZ";
+    const VNP_TMN_CODE = "035A82YD";
+    const VNP_HASH_SECRET = "CSWLKLJXLMFXBGPLUMBDIDVOFVWRIRVL";
     const VNP_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 
     protected $status = [
