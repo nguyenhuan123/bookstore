@@ -28,7 +28,6 @@
                                     <th>Tên</th>
                                     <th>Email</th>
                                     <th>SDT</th>
-                                    <th>Thời gian tạo</th>
                                     <th>Hành động</th>
                                 </tr>
                             </tbody>
@@ -40,7 +39,6 @@
                                             <td>{{ $item->sl_name }}</td>
                                             <td>{{ $item->sl_email }}</td>
                                             <td>{{ $item->sl_phone }}</td>
-                                            <td>{{  $item->created_at }}</td>
                                             <td>
                                                 <a href="{{ route('admin.ncc.update', $item->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Sửa</a>
                                                 <a href="{{  route('admin.ncc.delete', $item->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Xóa</a>

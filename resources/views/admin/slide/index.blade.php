@@ -29,7 +29,6 @@
                                     <th>Status</th>
                                     <th>Sort</th>
                                     <th>Target</th>
-                                    <th>Time</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($slides))
@@ -47,7 +46,6 @@
                                             </td>
                                             <td>{{  $slide->sd_sort }}</td>
                                             <td>{{  $slide->sd_target }}</td>
-                                            <td>{{  $slide->created_at }}</td>
                                             <td>
                                                 <a href="{{ route('admin.slide.update', $slide->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>
                                                 <a href="{{  route('admin.slide.delete', $slide->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Delete</a>

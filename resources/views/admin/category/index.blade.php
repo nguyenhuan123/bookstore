@@ -29,7 +29,6 @@
                                     <th>Ảnh</th>
                                     <th>Tình trạng</th>
                                     <th>Hot</th>
-                                    <th>Thời gian thêm</th>
                                     <th>Hành động</th>
                                 </tr>
                                 @if ($categories)
@@ -56,7 +55,6 @@
                                                     <a href="{{ route('admin.category.hot', $category->id) }}" class="label label-default">Không</a>
                                                 @endif
                                             </td>
-                                            <td>{{  $category->created_at }}</td>
                                             <td>
                                                 <a href="{{ route('admin.category.update', $category->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Sửa</a>
                                                 <a href="{{  route('admin.category.delete', $category->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Xóa</a>

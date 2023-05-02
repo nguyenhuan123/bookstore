@@ -28,7 +28,6 @@
                                     <th>Name</th>
                                     <th>Link</th>
                                     <th>Banner</th>
-                                    <th>Time</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($events))
@@ -41,7 +40,6 @@
                                             <td>
                                                 <img src="{{ pare_url_file($event->e_banner) }}" style="width: 100px;height: 40px">
                                             </td>
-                                            <td>{{  $event->created_at }}</td>
                                             <td style="width: 135px;">
                                                 <a href="{{ route('admin.event.update', $event->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>
                                                 <a href="{{  route('admin.event.delete', $event->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Delete</a>

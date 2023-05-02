@@ -27,7 +27,6 @@
                                     <th style="width: 10px">ID</th>
                                     <th>Name</th>
                                     <th>Type</th>
-                                    <th>Time</th>
                                     <th>Action</th>
                                 </tr>
                                 @if (isset($statics))
@@ -37,7 +36,6 @@
                                             <td>{{ $static->id }}</td>
                                             <td>{{ $static->s_title }}</td>
                                             <td>{{ $static->getType($static->s_type) }}</td>
-                                            <td>{{  $static->created_at }}</td>
                                             <td>
                                                 <a href="{{ route('admin.static.update', $static->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>
                                                 <a href="{{  route('admin.static.delete', $static->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Delete</a>

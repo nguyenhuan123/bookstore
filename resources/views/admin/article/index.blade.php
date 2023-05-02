@@ -30,7 +30,6 @@
                                     <th>Ảnh</th>
                                     <th>Hot</th>
                                     <th>Tình trạng</th>
-                                    <th>Thời gian tạo</th>
                                     <th>Hành động</th>
                                 </tr>
 
@@ -63,7 +62,6 @@
                                                     <a href="{{ route('admin.article.active', $article->id) }}" class="label label-default">Ẩn</a>
                                                 @endif
                                             </td>
-                                            <td>{{  $article->created_at }}</td>
                                             <td style="width: 120px">
                                                 <a href="{{ route('admin.article.update', $article->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Sửa</a>
                                                 <a href="{{  route('admin.article.delete', $article->id) }}" class="btn btn-xs btn-danger js-delete-confirm"><i class="fa fa-trash"></i> Xóa</a>

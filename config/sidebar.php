@@ -169,13 +169,13 @@ return [
                 'icon'  => 'fa-plus-square',
 				'level'  => [1,2],
             ],
-			[
-				'name'  => 'Xuất kho',
-				'namespace' => 'export',
-				'route' => 'admin.inventory.out_of_stock',
-				'icon'  => 'fa-plus-square',
-				'level'  => [1,2],
-			],
+			// [
+			// 	'name'  => 'Xuất kho',
+			// 	'namespace' => 'export',
+			// 	'route' => 'admin.inventory.out_of_stock',
+			// 	'icon'  => 'fa-plus-square',
+			// 	'level'  => [1,2],
+			// ],
 			[
 				'name'  => 'Tồn kho',
 				'namespace' => 'tonkho',
