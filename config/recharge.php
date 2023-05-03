@@ -1,7 +1,7 @@
 <?php
 //return [
 //	'URL_API' => 'https://www.nganluong.vn/checkout.api.nganluong.post.php',
-//	'RECEIVER' => 'phupt.humg.94@gmail.com',
+//	'RECEIVER' => 'huannguyen11120@gmail.com',
 //	'MERCHANT_ID' => '63157',
 //	'MERCHANT_PASS' => 'bd55d43c11921ff96914b01634dfe610'
 //];

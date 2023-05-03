@@ -38,8 +38,8 @@
         </div>
     </div>
     <div style="background: #f4f5f5;box-sizing: border-box;padding: 15px">
-        <p style="margin:2px 0;color: #333">Email : phupt.humg.94@gmail.com</p>
-        <p style="margin:2px 0;color: #333">Phone : 0986420994</p>
-        <p style="margin:2px 0;color: #333">Face : <a href="https://www.facebook.com/TrungPhuNA">TrungPhuNa</a></p>
+        <p style="margin:2px 0;color: #333">Email : huannguyen11120@gmail.com</p>
+        <p style="margin:2px 0;color: #333">Phone : 0945582258</p>
+        <p style="margin:2px 0;color: #333">Face : <a href="">Nguyen Huan</a></p>
     </div>
 </div>

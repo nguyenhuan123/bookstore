@@ -68,7 +68,7 @@ class ResetPasswordController extends Controller
 
         // Check xem time taoj token quá 3phút chưa 
         $now = Carbon::now();
-        if ($now->diffInMinutes($checkToken->created_at) > 3) {
+        if ($now->diffInMinutes($checkToken->created_at) > 5) {
             \DB::table('password_resets')->where('email', $request->email)->delete();   
             return redirect()->to('/');
         }

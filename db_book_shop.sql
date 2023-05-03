@@ -49,7 +49,7 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`id`, `name`, `email`, `password`, `phone`, `log_login`, `class`, `address`, `level`, `status`, `avatar`, `created_at`, `updated_at`) VALUES
 (1, 'Admin', 'doantotnghiep@gmail.com', '$2y$10$jL8d0Fau1uB.qLDXToFhSeUAoLHByuvbEWfeV4Sg7Ziy6sO4whY3q', '0988999999', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL),
-(2, 'Nhân viên', 'nhanvien@gmail.com', '$2y$10$NNYi0koqS93aRQunXTE76OeGeU4e6jFm6GatlHcHCM6.DVYrswY7G', '0986420994', NULL, NULL, NULL, 2, 1, NULL, '2020-06-13 06:23:32', NULL);
+(2, 'Nhân viên', 'nhanvien@gmail.com', '$2y$10$NNYi0koqS93aRQunXTE76OeGeU4e6jFm6GatlHcHCM6.DVYrswY7G', '0945582258', NULL, NULL, NULL, 2, 1, NULL, '2020-06-13 06:23:32', NULL);
 
 -- --------------------------------------------------------
 
