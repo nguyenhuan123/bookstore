@@ -20,7 +20,7 @@
                 </li>
 
                 <li>
-                    <a itemprop="url" href="" title="Đồng hồ Diamond D"><span itemprop="title">{{ $product->pro_name }}</span></a>
+                    <a itemprop="url" href="" title=""><span itemprop="title">{{ $product->pro_name }}</span></a>
                 </li>
 
             </ul>

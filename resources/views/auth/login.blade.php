@@ -12,11 +12,11 @@
                     <a itemprop="url" href="/" title="Home"><span itemprop="title">Trang chủ</span></a>
                 </li>
                 <li itemscope="" >
-                    <a itemprop="url" href="#" title="Đồng hồ chính hãng"><span itemprop="title">Account</span></a>
+                    <a itemprop="url" href="#" title=""><span itemprop="title">Account</span></a>
                 </li>
 
                 <li itemscope="">
-                    <a itemprop="url" href="#" title="Đồng hồ Diamond D"><span itemprop="title">Đăng nhập</span></a>
+                    <a itemprop="url" href="#" title=""><span itemprop="title">Đăng nhập</span></a>
                 </li>
 
             </ul>
